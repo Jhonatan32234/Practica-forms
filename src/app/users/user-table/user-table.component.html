@@ -1,6 +1,6 @@
 <div>
     <h2>Usuarios local</h2>
-    <table id="table1">
+    <table id="table1"> 
         <tr id="tr1">
             <th>ID</th>
             <th>NAME</th>
@@ -8,12 +8,12 @@
             <th>PHONE</th>
             <th>WEBSITE</th>
         </tr>
-        <tr >
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+        <tr *ngFor="let user of users" >
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.phone}}</td>
+            <td>{{user.website}}</td>
         </tr>
     </table>
 </div>

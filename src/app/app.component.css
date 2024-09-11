@@ -1,5 +1,10 @@
 #app{
     display: flex;
+    width: 100%;
     flex-direction: column;
     text-align: center;
+    background-color: antiquewhite;
+    align-items: center;
+    border: 3px black solid;
 }
+

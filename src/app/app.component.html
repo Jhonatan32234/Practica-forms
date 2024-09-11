@@ -1,5 +1,9 @@
 <div id="app">
 <app-users-dashboard></app-users-dashboard>
-<app-user-table></app-user-table>
-<app-user-form></app-user-form>
+<app-user-form (usuarioCreado)="onUsuarioCreado($event)"></app-user-form>
+
+<app-user-table #userTable></app-user-table>
+
+
+
 </div>

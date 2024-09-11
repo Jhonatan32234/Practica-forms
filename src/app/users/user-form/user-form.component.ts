@@ -16,9 +16,20 @@ export class UserFormComponent {
     website:""
   }
 
-  @Output() userAdded = new EventEmitter<IUser>();
+  @Output() usuarioCreado = new EventEmitter<IUser>();
   mostrar():void {
-    this.userAdded.emit(this.user)
-    this.user = { id: 0, name: "", username: "", phone: "", website: "" };
+    console.log(this.user)
+    this.usuarioCreado.emit(this.user)
+    this.resetForm();
+  }
+
+  resetForm(): void{
+    this.user = {
+      id: 0,
+      name: "",
+      username: "",
+      phone: "",
+      website: ""
+    };
   }
 }

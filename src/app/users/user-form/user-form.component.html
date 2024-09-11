@@ -1,0 +1,16 @@
+<div id="form">
+    <h1>Formulario de usuarios</h1>
+    <label for="user_name">Nombre</label>
+    <input type="text" [(ngModel)]="user.name" name="user_name" id="user_name">
+    
+    <label for="username">Username</label>
+    <input type="text" [(ngModel)]="user.username" name="username" id="username">
+    
+    <label for="uer_phone">Phone</label>
+    <input type="text" [(ngModel)]="user.phone" name="user_phone" id="user_phone">
+    
+    <label for="user_website">Website</label>
+    <input type="text" [(ngModel)]="user.website" name="user_website" id="user_website">
+    
+    <button (click)="mostrar()">Mostrar</button>
+</div>

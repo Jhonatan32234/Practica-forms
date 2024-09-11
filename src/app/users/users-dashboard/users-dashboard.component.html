@@ -1,0 +1,20 @@
+<div>
+    <h2>Usuarios de api</h2>
+    <table id="table1">
+        <tr id="tr1">
+            <th>ID</th>
+            <th>NAME</th>
+            <th>USERNAME</th>
+            <th>PHONE</th>
+            <th>WEBSITE</th>
+        </tr>
+        <tr *ngFor="let user of user_list">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.phone}}</td>
+            <td>{{user.website}}</td>
+        </tr>
+    </table>
+</div>
+<br>

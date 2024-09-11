@@ -1,0 +1,13 @@
+#table1{
+    border: 5px black double;
+    width: 80%;
+    font-size: 15px;
+}
+
+#table1 th, #table1 td {
+    border: 2px black solid;
+}
+
+h2{
+    font-size: 30px;
+}

@@ -1,0 +1,16 @@
+<div>
+<div *ngIf="this.disabled">
+     <h1>MATRICULA</h1><input type="text" name="matricula" id="matricula" value="{{alumno.matricula}}"  ><br> 
+
+</div>
+
+ <h1>NOMBRE</h1>   <input type="text" name="nombre" id="nombre" value="{{alumno.nombre}}" [disabled]=" true"><br>
+ <h1>APELLIDOS</h1>   <input type="text" name="apellidos" id="apellidos" value="{{alumno.apellidos}}"> <br>   
+ <h1>CURP</h1>   <input type="text" name="curp" id="curp" value="{{alumno.curp}}"><br>
+ <h1>NSS</h1>   <input type="text" name="nss" id="nss" value="{{alumno.nss}}"><br>
+ <h1>correo_personal</h1>   <input type="text" name="correo_personal" id="correo_personal" value="{{alumno.correo_personal}}"><br>
+ <h1>correo_institucional</h1>   <input type="text" name="correo_institucional" id="correo_institucional" value="{{alumno.correo_institucional}}"><br>
+    <button (click) = "mostrar()"  >ENVIAR DATOS</button>
+    <button (click) = "actualizar()" *ngIf="edad >= 18">EDITAR</button>
+    <button (click) = "guardar()" *ngIf="edad < 18">GUARDAR</button>
+</div>
